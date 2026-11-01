@@ -1,0 +1,27 @@
+{
+  "name": "kurdstay-properties",
+  "version": "1.0.0",
+  "private": true,
+  "description": "KurdStay property marketplace, web and Capacitor Android",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "node scripts/build-native.mjs",
+    "test": "node check.cjs && node check-home.cjs && node check-media.cjs && node check-ux.cjs && node check-regions.cjs && node check-mobile.cjs",
+    "dev": "node scripts/serve.mjs",
+    "android:sync": "npm run build && cap sync android",
+    "android:open": "cap open android",
+    "android:run": "npm run android:sync && cap run android"
+  },
+  "dependencies": {
+    "@capacitor/core": "8.6.0",
+    "@capacitor/android": "8.6.0",
+    "@capacitor/app": "8.1.2",
+    "@capacitor/browser": "8.0.5"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "8.6.0",
+    "esbuild": "^0.25.0",
+    "linkedom": "0.18.15",
+    "fake-indexeddb": "^6.0.0"
+  }
+}

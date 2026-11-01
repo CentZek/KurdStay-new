@@ -1,0 +1,14 @@
+{
+  "appId": "com.kurdstay.properties",
+  "appName": "KurdStay",
+  "webDir": "dist",
+  "backgroundColor": "#0b2131",
+  "zoomEnabled": true,
+  "plugins": {
+    "SystemBars": {
+      "insetsHandling": "css",
+      "initialViewportFitValueHint": "cover",
+      "style": "DARK"
+    }
+  }
+}
